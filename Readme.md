@@ -23,10 +23,15 @@
 - 步长eta取0.1
 - 步长衰减系数alpha取0.9
 - 训练30次
+- 
 我运行的那一次：
+
 训练集准确率：0.991367
+
 测试集准确率：0.9682
+
 结果还算可以
+
 ## 参考
 1. 李航《统计学习方法》(第二版)
 2. Michael Nielsen《Neural Networks and Deep Learning》http://neuralnetworksanddeeplearning.com/index.html
