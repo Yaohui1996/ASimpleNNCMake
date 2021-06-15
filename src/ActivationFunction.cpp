@@ -1,7 +1,7 @@
 #include "../include/ActivationFunction.h"
 #include <../include/eigen-3.3.8/Eigen/Dense>
 
-auto sigmoid(const Eigen::VectorXd &a) -> Eigen::VectorXd
+Eigen::VectorXd sigmoid(const Eigen::VectorXd &a) 
 {
     Eigen::VectorXd::Index N = a.size();
     Eigen::VectorXd z = Eigen::VectorXd::Zero(N);
@@ -12,7 +12,7 @@ auto sigmoid(const Eigen::VectorXd &a) -> Eigen::VectorXd
     return z;
 }
 
-auto diffSigmoid(const Eigen::VectorXd &z) -> Eigen::VectorXd
+Eigen::VectorXd diffSigmoid(const Eigen::VectorXd &z) 
 {
     Eigen::VectorXd::Index N = z.size();
     Eigen::VectorXd ret = Eigen::VectorXd::Zero(N);

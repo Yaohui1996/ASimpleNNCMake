@@ -12,7 +12,7 @@ using std::cout;
 using std::endl;
 using std::vector;
 
-auto main() -> int
+int main()
 {
     //初始化模型
     vector<int> neuresofLayer{784, 64, 128, 64, 10}; //神经网络层数和每层的单元数
@@ -22,8 +22,8 @@ auto main() -> int
     constexpr double alpha = 0.9;                    //每一轮训练的步长衰减系数
 
     //读取数据
-    vector<vector<int>> train_images;
-    vector<vector<int>> test_images;
+    vector<vector<int> > train_images;
+    vector<vector<int> > test_images;
     vector<int> train_labels;
     vector<int> test_labels;
 
@@ -52,7 +52,8 @@ auto main() -> int
     unsigned seed1 = std::chrono::system_clock::now().time_since_epoch().count();
     std::mt19937 g1(seed1);
     std::uniform_real_distribution<double> distribution(-1.0, 1.0);
-    auto slcg = [&]() { return distribution(g1); };
+    auto slcg = [&]()
+    { return distribution(g1); };
 
     //初始化a
     vector<Eigen::VectorXd> a(L);

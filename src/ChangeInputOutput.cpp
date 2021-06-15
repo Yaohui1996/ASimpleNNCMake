@@ -4,7 +4,7 @@
 
 using std::vector;
 
-auto changeOutputFormat(const vector<int> &labels) -> vector<Eigen::VectorXd>
+vector<Eigen::VectorXd>changeOutputFormat(const vector<int> &labels) 
 {
     vector<Eigen::VectorXd> labels_eigen;
     vector<Eigen::VectorXd>::size_type N = labels.size();
@@ -18,7 +18,7 @@ auto changeOutputFormat(const vector<int> &labels) -> vector<Eigen::VectorXd>
     return labels_eigen;
 }
 
-auto changeInputFormat(const vector<vector<int>> &images) -> vector<Eigen::VectorXd>
+vector<Eigen::VectorXd> changeInputFormat(const vector<vector<int>> &images) 
 {
     vector<Eigen::VectorXd> images_eigen;
     for (vector<vector<int>>::const_iterator it = images.cbegin(); it != images.cend(); ++it)

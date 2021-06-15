@@ -1,7 +1,7 @@
 #include "../include/Hadamard.h"
 #include <../include/eigen-3.3.8/Eigen/Dense>
 
-auto hadamard(const Eigen::VectorXd &v1, const Eigen::VectorXd &v2) -> Eigen::VectorXd
+Eigen::VectorXd hadamard(const Eigen::VectorXd &v1, const Eigen::VectorXd &v2)
 {
     Eigen::VectorXd ret = Eigen::VectorXd::Zero(v1.size());
     for (Eigen::VectorXd::Index i = 0; i != v1.size(); ++i)

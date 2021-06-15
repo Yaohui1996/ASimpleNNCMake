@@ -1,20 +1,18 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
   )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yaohui/mydesktop/ASimpleNNCMakeGithub/src/ActivationFunction.cpp" "/home/yaohui/mydesktop/ASimpleNNCMakeGithub/build/CMakeFiles/ASimpleNNCMake.dir/src/ActivationFunction.cpp.o"
-  "/home/yaohui/mydesktop/ASimpleNNCMakeGithub/src/ChangeInputOutput.cpp" "/home/yaohui/mydesktop/ASimpleNNCMakeGithub/build/CMakeFiles/ASimpleNNCMake.dir/src/ChangeInputOutput.cpp.o"
-  "/home/yaohui/mydesktop/ASimpleNNCMakeGithub/src/Hadamard.cpp" "/home/yaohui/mydesktop/ASimpleNNCMakeGithub/build/CMakeFiles/ASimpleNNCMake.dir/src/Hadamard.cpp.o"
-  "/home/yaohui/mydesktop/ASimpleNNCMakeGithub/src/ReadMNIST.cpp" "/home/yaohui/mydesktop/ASimpleNNCMakeGithub/build/CMakeFiles/ASimpleNNCMake.dir/src/ReadMNIST.cpp.o"
-  "/home/yaohui/mydesktop/ASimpleNNCMakeGithub/src/main.cpp" "/home/yaohui/mydesktop/ASimpleNNCMakeGithub/build/CMakeFiles/ASimpleNNCMake.dir/src/main.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../include"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/yaohui/Desktop/ASimpleNNCMake/src/ActivationFunction.cpp" "CMakeFiles/ASimpleNNCMake.dir/src/ActivationFunction.cpp.o" "gcc" "CMakeFiles/ASimpleNNCMake.dir/src/ActivationFunction.cpp.o.d"
+  "/Users/yaohui/Desktop/ASimpleNNCMake/src/ChangeInputOutput.cpp" "CMakeFiles/ASimpleNNCMake.dir/src/ChangeInputOutput.cpp.o" "gcc" "CMakeFiles/ASimpleNNCMake.dir/src/ChangeInputOutput.cpp.o.d"
+  "/Users/yaohui/Desktop/ASimpleNNCMake/src/Hadamard.cpp" "CMakeFiles/ASimpleNNCMake.dir/src/Hadamard.cpp.o" "gcc" "CMakeFiles/ASimpleNNCMake.dir/src/Hadamard.cpp.o.d"
+  "/Users/yaohui/Desktop/ASimpleNNCMake/src/ReadMNIST.cpp" "CMakeFiles/ASimpleNNCMake.dir/src/ReadMNIST.cpp.o" "gcc" "CMakeFiles/ASimpleNNCMake.dir/src/ReadMNIST.cpp.o.d"
+  "/Users/yaohui/Desktop/ASimpleNNCMake/src/main.cpp" "CMakeFiles/ASimpleNNCMake.dir/src/main.cpp.o" "gcc" "CMakeFiles/ASimpleNNCMake.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links.
